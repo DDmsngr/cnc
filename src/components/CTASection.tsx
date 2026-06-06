@@ -26,7 +26,7 @@ export default function CTASection() {
               href="mailto:9254652@bk.ru"
               className="bg-primary text-primary-foreground px-8 py-4 text-sm font-bold rounded-sm hover:brightness-110 transition-all active:scale-[0.97]"
             >
-              Написать на почту
+              9254652@bk.ru
             </a>
             <a
               href="tel:+79119254652"

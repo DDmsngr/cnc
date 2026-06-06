@@ -8,8 +8,8 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-end bg-hero-bg overflow-hidden">
 
-      {/* Spline 3D background */}
-      <div className="absolute inset-0">
+      {/* Spline 3D background — pointer-events-none so scroll passes through */}
+      <div className="absolute inset-0" style={{ pointerEvents: 'none' }}>
         <Suspense fallback={<div className="absolute inset-0 bg-hero-bg" />}>
           <Spline scene={SCENE} className="w-full h-full" />
         </Suspense>
@@ -23,10 +23,15 @@ export default function HeroSection() {
 
         {/* Heading */}
         <h1
-          className="opacity-0 animate-fade-up text-[clamp(3rem,8vw,6rem)] font-bold leading-[1.02] tracking-[-0.05em] text-foreground mb-2 md:mb-4 uppercase"
+          className="opacity-0 animate-fade-up tracking-[-0.05em] text-foreground mb-2 md:mb-4 uppercase"
           style={{ animationDelay: '0.2s' }}
         >
-          ЕВТУШЕНКО<span className="text-primary"> ЧПУ</span>
+          <span className="block text-[clamp(1rem,2vw,1.25rem)] font-light tracking-[0.35em] text-foreground/40 mb-1">
+            Алексей
+          </span>
+          <span className="text-[clamp(3rem,8vw,6rem)] font-bold leading-[1.02]">
+            ЕВТУШЕНКО<span className="text-primary"> ЧПУ</span>
+          </span>
         </h1>
 
         {/* Subheading */}
@@ -34,7 +39,7 @@ export default function HeroSection() {
           className="opacity-0 animate-fade-up text-foreground/80 text-[clamp(1.125rem,2.5vw,1.875rem)] font-light mb-3 md:mb-6"
           style={{ animationDelay: '0.4s' }}
         >
-          Программирую станки с первого раза.
+          Сложные детали. Чистый G-код. Без переделок.
         </p>
 
         {/* Description */}
