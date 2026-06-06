@@ -1,5 +1,5 @@
-const MILLING_IMG = 'https://images.unsplash.com/photo-1666634157070-6fd830fb5672?fm=jpg&q=80&w=1200&auto=format&fit=crop'
-const LATHE_IMG   = 'https://images.unsplash.com/photo-1579107821380-a2f5df32d67f?fm=jpg&q=80&w=1200&auto=format&fit=crop'
+const MILLING_IMG = 'https://images.pexels.com/photos/33748032/pexels-photo-33748032.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1'
+const LATHE_IMG   = 'https://images.pexels.com/photos/8956445/pexels-photo-8956445.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1'
 
 const milling = [
   'УП для 3-, 4- и 5-осевых фрезерных центров в Siemens NX',
